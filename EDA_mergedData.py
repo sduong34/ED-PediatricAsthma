@@ -2,7 +2,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
 
-merged_data = pd.read_csv('MergedData.csv')
+merged_data = pd.read_csv('datasets/MergedData.csv')
 
 # Display basic information about the dataset
 print("Dataset basic info:")
