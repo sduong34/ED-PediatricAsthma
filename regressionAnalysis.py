@@ -39,3 +39,24 @@ print(f"Intercept: {model.intercept_:.4f}")
 
 print("\nRoot Mean Squared Error (RMSE):", rmse)
 print("R-squared:", r2) 
+
+import matplotlib.pyplot as plt
+import seaborn as sns
+
+#Predicted vs Actual plot
+plt.figure(figsize=(10, 6))
+plt.scatter(y_test, y_pred)
+plt.plot([min(y_test), max(y_test)], [min(y_test), max(y_test)], color='red', linewidth=2)
+plt.title("Predicted vs. Actual")
+plt.xlabel("Actual Values")
+plt.ylabel("Predicted Values")
+plt.show()
+
+#Feature importance plot
+importances = model.coef_
+plt.figure(figsize=(10, 6))
+plt.barh(independent_vars, importances)
+plt.title("Feature Importance")
+plt.xlabel("Coefficient Value")
+plt.ylabel("Features")
+plt.show()
