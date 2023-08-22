@@ -6,7 +6,7 @@ import numpy as np
 
 merged_data = pd.read_csv('datasets/MergedData.csv')
 
-# Define independent variables (features) and the dependent variable (target)
+# Define independent variables and the dependent variable 
 independent_vars = ['lab_results', 'procedures', 'vital_signs']
 dependent_var = 'encounters'  
 
