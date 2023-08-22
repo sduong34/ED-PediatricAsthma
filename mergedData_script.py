@@ -1,11 +1,11 @@
 import pandas as pd 
 import random
 
-patient = pd.read_csv('patient.csv')
-encounter = pd.read_csv('encounter.csv')
-lab_result = pd.read_csv('lab_result.csv')
-procedure = pd.read_csv('procedure.csv')
-vital_signs = pd.read_csv('vitals_signs.csv')
+patient = pd.read_csv('D:/files/capstone/usable/patient.csv')
+encounter = pd.read_csv('D:/files/capstone/usable/encounter.csv')
+lab_result = pd.read_csv('D:/files/capstone/usable/lab_result.csv')
+procedure = pd.read_csv('D:/files/capstone/usable/procedure.csv')
+vital_signs = pd.read_csv('D:/files/capstone/usable/vitals_signs.csv')
 
 #returns counts of each (encounters, lab results, procedures, vital signs) for each patient in patient.csv
 def get_data_counts(data_frame, patient_id):
